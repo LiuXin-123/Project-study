@@ -18,7 +18,30 @@ body {
 .header {
     background: red;
     height: 100px;
-    flex: none;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.middleheader span {
+	display: inline-block;
+	margin:0 40px;
+	/*border: 2px solid #fff;
+	border-radius: 10%;*/
+}
+.middleheader:nth-child(odd) {
+	line-height:40px;
+	font-size: 40px;
+	font-weight:700;
+} 
+.rightheader {
+	max-width: 130px;
+}
+.header .contact-hours {
+	color:grey;
+	line-height:12px;
+	font-size: 14px;
+	display: block;
+	font-weight:400;
 }
 .main {
     background: green;
@@ -39,4 +62,8 @@ body {
 .logo-block img {
 	max-width: 50px;
 	max-height: 50px;
+}
+.carousel-item img {
+	height: 300px;
+	
 }
