@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}html{
+	height: 100%;
+}
+body {
+    height: 100%;
+	font-family: 'PT Serif', serif;
+}
+.wrapper {
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+.header {
+    background: red;
+    height: 100px;
+    flex: none;
+}
+.main {
+    background: green;
+    flex: 1 1 auto;
+}
+.footer {
+    background: blue;
+    height: 200px;
+    flex: none;
+	font-size: 15px;
+	color: #000;
+}
+.container-footer {
+	display: flex;
+	justify-content: space-between;
+	width: 1140px;
+}
+.logo-block img {
+	max-width: 50px;
+	max-height: 50px;
+}
