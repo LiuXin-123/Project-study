@@ -22,21 +22,30 @@ body {
 	justify-content: space-between;
 	align-items: center;
 }
+.leftheader {
+	margin:0 10px;
+}
 .middleheader span {
 	display: inline-block;
-	margin:0 40px;
+	margin:0 30px;
+	font-size: 30px;
+	font-weight:700;
 	/*border: 2px solid #fff;
 	border-radius: 10%;*/
 }
-.middleheader:nth-child(odd) {
-	line-height:40px;
+.middleheader .lable {
+	color: green;
 	font-size: 40px;
+}
+/*.middleheader:nth-child(odd)
+.product, .catalog {
+	font-size: 30px;
 	font-weight:700;
-} 
+} */
 .rightheader {
 	max-width: 130px;
 }
-.header .contact-hours {
+.contact-hours {
 	color:grey;
 	line-height:12px;
 	font-size: 14px;
@@ -46,6 +55,9 @@ body {
 .main {
     background: green;
     flex: 1 1 auto;
+}
+a {
+	text-decoration: none;
 }
 .footer {
     background: blue;
