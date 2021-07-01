@@ -37,11 +37,11 @@ body {
 	color: green;
 	font-size: 40px;
 }
-/*.middleheader:nth-child(odd)
-.product, .catalog {
+.middleheader < first-child {
 	font-size: 30px;
 	font-weight:700;
-} */
+	color:yellow;
+}
 .rightheader {
 	max-width: 130px;
 }
