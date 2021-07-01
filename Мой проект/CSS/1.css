@@ -37,7 +37,7 @@ body {
 	color: green;
 	font-size: 40px;
 }
-.middleheader < first-child {
+.middleheader > first-child {
 	font-size: 30px;
 	font-weight:700;
 	color:yellow;
