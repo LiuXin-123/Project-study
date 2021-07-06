@@ -8,7 +8,7 @@
 body {
     height: 100%;
 	font-family: 'PT Serif', serif;
-	
+	margin: 0;
 }
 .wrapper {
 	background: url('../images/фон2-1.jpg') left top repeat;
@@ -33,25 +33,28 @@ a {
 	}
 nav {
 	display: flex;
-	align-items: center;
+	/*align-items: center;*/
 	text-align: center;
 	font-weight: 700;
 	font-size: 30px;
 	}
 .menupoint {
-	display: inline-block;
+	/*display: inline-block;*/
 	margin: 0;
 	position: relative;
 	width: 250px;
 	height: 100px;
 }
-
+.aboutus,
+.catalog {
+	display: none;
+}
 .menu {
 	display: none;
 	position: absolute;
 	top: 100px;
-	left: 40px;
-	width: 200px;
+	left: 70px;
+	width: 100px;
 	z-index:1;
 }
 
@@ -63,11 +66,12 @@ nav {
 .lable {
 	color: green;
 	font-weight:700;
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 80%;
 }
 .pulldown-point {
 	display: block;
+	font-size: 15px;
 }
 
 .rightheader {
@@ -85,14 +89,20 @@ nav {
 	/*width: 900px;*/
 	position: relative;
     background: green;
-    flex: 1 1 auto;
+    /*flex: 1 1 auto;*/
+	border: green 5px solid;
 }
 /*.carousel slide pointer-event */
 #carouselExampleCaptions {
+	display: none;
 	width: 100%;
+	flex: 1 4 auto;
 }
 .mainleft {
-	width: 300px;
+	/*flex: 1 1 auto;*/
+	width: 215px;
+	/*padding: 10px;*/
+	margin: 0 100px 0 70px;
 	background: url('../images/дом-1.jpg') left top
 }
 .mainright-1 {
@@ -114,7 +124,6 @@ nav {
 	flex: 1 1 auto;
 	background: transparent;
 	display: flex;
-	width: 1200px;
 	margin: 10px 150px 10px 150px;
 }
 
@@ -123,6 +132,7 @@ nav {
 	
 }
 aside {
+	display: none;
 	flex: none;
 	width: 180px;
 	background: brown;
@@ -173,10 +183,7 @@ aside {
 }
 
 /* catalog */
-.catalog {
-	display: flex;
-	gap: 8px;
-}
+
 .cat-blocks {
 	flex: 1 1 auto;
 	display: flex;
@@ -212,10 +219,7 @@ aside {
 	.cat-blocks {
 		gap: 32px;
 	}
-	aside {
-		width: 260px;
-	}
-	.catalog {
+	.main-wrapper {
 		gap: 16px;
 	}
 }
@@ -223,10 +227,40 @@ aside {
 	.cat-blocks {
 		gap: 4px;
 	}
+	aside {
+		display: block;
+		width: 160px;
+	}
+	.aboutus,
+	.catalog {
+	display: block;
+}
+	.lable {
+	font-size: 40px;
+	}
+	.menu {
+	width: 200px;
+	left: 40px;
+	}
+	.menupoint {
+	font-size: 25px;
+	}
+	/*.menupoint:nth-child(odd) {
+	display: block;
+	}*/
+	#carouselExampleCaptions {
+	display: block;
+	}
+	.mainleft {
+	margin: 0;
+	}
 }
 @media (min-width: 992px) {
 	.cat-blocks {
 		gap: 10px;
+	}
+	aside {
+		width: 260px;
 	}
 }
 @media (min-width: 1200px) {
