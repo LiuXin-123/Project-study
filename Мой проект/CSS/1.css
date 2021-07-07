@@ -14,7 +14,7 @@ body {
 	background: url('../images/фон2-1.jpg') left top repeat;
     display: flex;
     flex-direction: column;
-    height: 100%
+    min-height: 100%
 }
 a {
 	text-decoration: none;
@@ -23,6 +23,7 @@ a {
     background: #ec4b82d9;
     height: 100px;
     display: flex;
+	flex: none;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -89,7 +90,7 @@ nav {
 	/*width: 900px;*/
 	position: relative;
     background: green;
-    /*flex: 1 1 auto;*/
+    flex: 1 1 auto;
 	border: green 5px solid;
 }
 /*.carousel slide pointer-event */
