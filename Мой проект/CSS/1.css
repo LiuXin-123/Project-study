@@ -34,6 +34,7 @@ a {
 	}
 nav {
 	display: flex;
+	align-items: center;
 	/*align-items: center;*/
 	text-align: center;
 	font-weight: 700;
@@ -44,7 +45,8 @@ nav {
 	margin: 0;
 	position: relative;
 	width: 250px;
-	height: 100px;
+	/*height: 100px;*/
+	
 }
 .aboutus,
 .catalog {
@@ -53,12 +55,18 @@ nav {
 .menu {
 	display: none;
 	position: absolute;
-	top: 100px;
+	border: 5px solid white;
+	border-radius: 25%;
+	top: 38px;
 	left: 70px;
-	width: 100px;
-	z-index:1;
+	padding: 60px 20px 20px 20px;
+	/*width: 100px;*/
+	z-index:2;
+	
 }
-
+#dream {
+	top: 80px;
+}
 .menupoint:hover > span,
 .menupoint > span:hover {
 	display: block;
@@ -73,6 +81,11 @@ nav {
 .pulldown-point {
 	display: block;
 	font-size: 15px;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin: 10px;
+	background: white;
+	color: green;
 }
 
 .rightheader {
@@ -93,18 +106,25 @@ nav {
     flex: 1 1 auto;
 	border: green 5px solid;
 }
+.medium {
+	width: 100%;
+	flex: 1 4 auto;
+	align-self: flex-start;
+}
 /*.carousel slide pointer-event */
 #carouselExampleCaptions {
 	display: none;
-	width: 100%;
-	flex: 1 4 auto;
 }
 .mainleft {
 	/*flex: 1 1 auto;*/
-	width: 215px;
+	min-width: 215px;
 	/*padding: 10px;*/
 	margin: 0 100px 0 70px;
 	background: url('../images/дом-1.jpg') left top
+}
+.mainright {
+	display: flex;
+	flex-direction: column;
 }
 .mainright-1 {
 	width: 200px;
@@ -185,12 +205,21 @@ aside {
 
 /* catalog */
 
-.cat-blocks {
+.cat-blocks,
+.cat-blocks-1 {
 	flex: 1 1 auto;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: flex-start;
 	gap: 8px;
+}
+.cat-blocks-1 {
+	/*flex: 1 1 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;*/
+	gap: 20px;
+	padding: 30px 0 30px 100px;
 }
 .cat-unit {
 	height: 100px;
@@ -198,6 +227,7 @@ aside {
 	background: pink;
 }
 .footer {
+	display: flex;
     background: #6666a2db;
     height: 150px;
     flex: none;
@@ -263,10 +293,16 @@ aside {
 	aside {
 		width: 260px;
 	}
+	.cat-blocks-1 {
+	display: none;
+	}
 }
 @media (min-width: 1200px) {
 	.cat-blocks {
 		gap: 22px;
+	}
+	.cat-blocks-1 {
+	display: none;
 	}
 }
 @media (min-width: 1400px) {
