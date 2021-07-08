@@ -1,0 +1,52 @@
+https://github.com/ShellKhan/proekt
+
+Ольга Малаховская
+14:58
+https://github.com/Chrysolite73/Project корректировка js:
+$('.submenu_mover').click(function(){
+if ($(this).parent().hasClass('open')) {
+$('.catmenu_item.open').removeClass('open').find('.submenu').animate({
+height: 0
+}, 1000);
+} else if ($('.catmenu_item.open').length > 0) {
+let _this = this;
+$('.catmenu_item.open').removeClass('open').find('.submenu').animate({
+height: 0
+}, 1000, function(){
+$(_this).parent().addClass('open').find('.submenu').animate({
+height: ($(_this).parent().find('.submenu a').length * 24)
+}, 1000);
+});
+} else {
+$(this).parent().addClass('open').find('.submenu').animate({
+height: ($(this).parent().find('.submenu a').length * 24)
+}, 1000);
+}
+});
+
+V! почему не срабатывает селектор: .middleheader:nth-child(odd)*?
+это название одного элемента middleheader, который и является нечётным ребёнком...
+
+V! Почему курсор-пойнтер срабатывает под leftheader & rightheader по всей высоте экрана?
+Там область стрелок слайдера
+
+V! Как пользоваться справочником по JQuery?
+лучше перевести на русский..
+
+V! Пoчему не срабатывает цвет: .middleheader .lable {
+	color: green;
+там ссылка <a>, свойства которой прописаны в bootstrap
+
+?! Backend - это сервер+программисты сервера?
+
+?! Почему не работает nav {
+		align-items: center;
+		
+?! Почему в Основе  main внизу виден?
+		
+V! Как работает:
+.menupoint:hover > span,
+.menupoint > span:hover {
+	display: block;
+	background: white;
+}
