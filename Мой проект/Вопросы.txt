@@ -3,7 +3,7 @@ https://github.com/ShellKhan/proekt
 ?!footer
 ?! странный селектор в заказе.
 ?! GIT в ответ на git add . пишет: warning LF will be replaced by CRLF Что это?
-
+?! Каким селектором добраться до цвета placeholder?
 
 
 

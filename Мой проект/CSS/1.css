@@ -33,15 +33,65 @@ a {
 .popup-desk.active {
 	display: block;
 }
-.popup {
+.calendar, 
+.popup,
+.log {
 	position: absolute;
 	left: calc(50% - 150px);
-	top: 300px;
-	width: 300px;
+	top: 200px;
+	width: 310px;
 	background: #ef8ab8fc;
 	border-radius: 20px;
 	padding: 30px;
 	box-sizing: border-box;
+	user-select: none;
+	text-align: center;
+	
+}
+.calendar > table {
+	width: 100%;
+}
+.calendar > .header {
+	height: 50px;
+}
+.left,
+.right {
+	font-size: 30px;
+}
+.holiday {
+	color: green;
+}
+.log input,
+.log button,
+.register {
+	width: 250px;
+	height: 50px;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid white;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: black;
+	margin-bottom: 20px;
+	padding-left: 3px;
+}
+.log button {
+	width: 70px;
+	height: 30px;
+	margin-right: 28px;
+	padding: 0;
+	margin-bottom: 0;
+}
+.log a {
+	width: 150px;
+	height: 30px;
+	
+}
+.left,
+.right,
+.workday,
+.holiday {
+	cursor: pointer;
 }
 .gorod p {
 	text-align: center;
@@ -62,6 +112,26 @@ a {
 	margin: 0 0 0 10px;
 	border-radius: 50%;
 }
+.basket {
+	float: right;
+	margin: 30px 0 30px 50px;
+	border: 1px solid #000;
+	line-height: 40px;
+}
+.basket-label {
+	position: absolute;
+	top: 80px;
+	right: 0;
+	display: none;
+	opacity: 0;
+	transition: opacity 5s ease;
+}
+.basket:hover + .basket-label {
+	display: block;
+	opacity: 1;
+	transition: opacity 5s ease;
+}
+
 .lightbox {
 	left: 30px;
 	right: 30px;
@@ -231,6 +301,7 @@ aside {
 	width: 180px;
 	background: #ec4b82d9;
 	color: #fff;
+	height: 1200px;
 	font-weight:700;
 }
 .catmenu {
@@ -249,7 +320,7 @@ aside {
 }
 .catmenu_item a {
 	display: block;
-	color: #fff;
+	color: #98f1c8;
 	text-decoration: none;
 }
 .catmenu_item a:hover {
@@ -260,6 +331,7 @@ aside {
 	position: absolute;
 	right: 0;
 	top: 0;
+	color: #98f1c8;
 	cursor: pointer;
 	transition: all 1s ease;
 }
@@ -303,6 +375,51 @@ aside {
 	width: 200px;
 	background: pink;
 }
+.product {
+	width: 100%;
+}
+.gallery-desk {
+	width: 530px;
+	float: left;
+}
+.main-image {
+	padding: 24px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 25px;
+}
+.gallery-desk img {
+	cursor: zoom-in;
+}
+.gallery {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.small-image {
+	width: 170px;
+	height: 170px;
+	padding: 4px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+.small-image > img {
+	max-height: 160px;
+	max-width: 160px;
+}
+.description-desk {
+	margin-left: 540px;
+}
+.lightbox {
+	left: 30px;
+	right: 30px;
+	top: 30px;
+	width: auto;
+}
+.lightbox img {
+	max-width: 100%;
+}
 .login {
 	position: absolute;
 	top: 100px;
@@ -328,7 +445,29 @@ td > input {
     background: #359b2fcc;
     color: black;
 }
-
+.order {
+	width: 100%;
+}
+.nihil {
+	display: none;
+}
+.empty .nihil {
+	display: block;
+}
+.empty .table,
+.empty #orderdata {
+	display: none;
+}
+.rub:after, .sum:after, .allsum:after {
+	content: ' \20bd';
+}
+.num input {
+	border: 0;
+	width: 50px;
+}
+.del {
+	width: 60px;
+}
 .del > div {
     width: 24px;
     height: 24px;
