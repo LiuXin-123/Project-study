@@ -11,6 +11,7 @@ body {
     height: 100%;
 	font-family: 'PT Serif', serif;
 	margin: 0;
+	min-width: 320px;
 }
 .wrapper {
 	background: url('../images/flower-field.jpg') left top repeat;
@@ -292,7 +293,7 @@ nav {
 	flex: 1 1 auto;
 	background: transparent;
 	display: flex;
-	margin: 10px 150px 10px 150px;
+	margin: 10px 150px 10px 50px;
 }
 
 .carousel-item img {
@@ -402,7 +403,7 @@ aside {
 }
 .small-image {
 	width: 170px;
-	height: 170px;
+	height: 130px;
 	padding: 4px;
 	background: #fff;
 	border: 1px solid #000;
@@ -411,9 +412,15 @@ aside {
 .small-image > img {
 	max-height: 160px;
 	max-width: 160px;
+	margin-top: 7px !important;
+}
+
+.product > h1 {
+	display: inline-block;
 }
 .description-desk {
 	margin-left: 540px;
+	display: contents;
 }
 .lightbox {
 	left: 30px;
@@ -509,6 +516,8 @@ td > input {
     flex: none;
 	font-size: 15px;
 	color: #000;
+	justify-content: space-around;
+	padding-left: 20px;
 }
 
 .container-footer {
@@ -530,15 +539,15 @@ td > input {
 	gap: 10px;
 	}
 	.footer-menu-block:nth-of-type(1) { 
-	order: 4;
+	order: 3;
 	margin-left: 20px;	
 	}
 	.footer-menu-block:nth-of-type(2) { 
-	order: 3;
+	order: 2;
 	margin-left: 20px;
 	}
 	.footer-menu-block:nth-of-type(3) { 
-	order: 2; 
+	order: 1; 
 	margin-left: 20px;
 	}
 	.footer-menu-block:nth-of-type(4) { 
@@ -546,7 +555,7 @@ td > input {
 	margin: 0 20px;
 	}
 	.logo-block { 
-	order: 5; 
+	order: 4; 
 	margin: 0 20px;
 	}
 	.mainleft {
@@ -622,7 +631,7 @@ td > input {
 	display: none;
 	}*/
 	.logo-block { 
-	order: 1; 
+	order: 0 !important; 
 	}
 }
 @media (min-width: 1200px) {
