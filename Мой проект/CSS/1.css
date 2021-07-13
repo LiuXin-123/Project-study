@@ -306,7 +306,7 @@ aside {
 	width: 180px;
 	background: #ec4b82d9;
 	color: #fff;
-	height: 1200px;
+	max-height: 1200px;
 	font-weight:700;
 }
 .catmenu {
@@ -382,6 +382,7 @@ aside {
 }
 .product {
 	width: 100%;
+	color: green;
 }
 .gallery-desk {
 	width: 530px;
